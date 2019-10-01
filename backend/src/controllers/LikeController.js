@@ -17,6 +17,10 @@ module.exports = {
         };
         loggedDev.likes.push(targetDev._id);
 
+        console.log('Deu MATCH');
+
         await loggedDev.save();
+
+        return res.json(loggedDev);
     }
 };

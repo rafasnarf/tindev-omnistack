@@ -15,5 +15,7 @@ module.exports = {
         loggedDev.dislikes.push(targetDev._id);
 
         await loggedDev.save();
+
+        return res.json(loggedDev);
     }
 };
